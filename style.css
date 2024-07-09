@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #313e51;
+
+  background-image: url(./assets/images/pattern-background-desktop-light.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f4f6fa;
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+body.dark {
+  background-image: url(/assets/images/pattern-background-desktop-dark.svg);
+  background-color: #313e51;
+  color: #fff;
+}
+
+/* ========== */
+/* NAVIGATION */
+/* ========== */
+
+nav {
+  max-inline-size: 115.7rem;
+  margin: 8.3rem auto 8.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* NAVIGATION TITLE */
+
+.nav__title {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.topic-icon {
+  inline-size: 4rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+.html-style {
+  background-color: #fff1e9;
+}
+.css-style {
+  background-color: #e0fdef;
+}
+.js-style {
+  background-color: #ebf0ff;
+}
+.access-style {
+  background-color: #f6e7ff;
+}
+
+.topic-title {
+  font-size: 2.8rem;
+}
+
+/* NAVIGATION THEME */
+
+.nav__theme {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.theme-btn {
+  inline-size: 4.8rem;
+  block-size: 2.8rem;
+  background-color: #a729f5;
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.theme-btn-ball {
+  inline-size: 2rem;
+  block-size: 2rem;
+  background-color: #fff;
+  border-radius: 99px;
+
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+
+  transition: all 0.5s;
+}
+
+body.dark .theme-btn-ball {
+  left: 2.4rem;
+}
+
+#sun-icon {
+  transition: all 0.3s;
+}
+#moon-icon {
+  transition: all 0.3s;
+}
+
+/* ==== */
+/* MAIN */
+/* ==== */
+
+main {
+  display: flex;
+  max-inline-size: 116rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/* WELCOME */
+
+.welcome-section {
+  max-inline-size: 46.5rem;
+}
+
+.welcome-section h2 {
+  font-weight: 300;
+  font-size: 6.4rem;
+  margin-block-end: 4.8rem;
+}
+
+.welcome-section h2 span {
+  font-weight: 500;
+}
+
+.welcome-section p {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #626c7f;
+}
+
+/* TOPIC SELECT */
+
+.topic-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  inline-size: 56.4rem;
+}
+
+.btn-topic-style {
+  inline-size: 100%;
+
+  padding: 2.8rem;
+  border: none;
+  border-radius: 2.4rem;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  cursor: pointer;
+
+  box-shadow: 16px 16px 40px hsla(216, 25%, 25%, 0.14);
+}
+
+body.dark .btn-topic-style {
+  background-color: #3b4d66;
+}
+
+@media screen and (max-device-width: 850px) {
+  body {
+    background-image: url(/assets/images/pattern-background-tablet-light.svg);
+    background-size: 60%;
+  }
+
+  body.dark {
+    background-image: url(/assets/images/pattern-background-tablet-dark.svg);
+    background-size: 60%;
+  }
+
+  nav {
+    margin: 4rem 6.4rem 4.9rem 6.4rem;
+  }
+
+  main {
+    margin: 0 6.4rem;
+  }
+}
+
+@media screen and (max-device-width: 765px) {
+  main {
+    flex-direction: column;
+    gap: 6.4rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-device-width: 490px) {
+  .nav__theme {
+    gap: 0.8rem;
+  }
+
+  .theme-btn {
+    inline-size: 3.2rem;
+    block-size: 2rem;
+  }
+  .theme-btn-ball {
+    inline-size: 1.2rem;
+    block-size: 1.2rem;
+  }
+
+  body.dark .theme-btn-ball {
+    left: 1.6rem;
+  }
+
+  #sun-icon {
+    inline-size: 1.6rem;
+  }
+  #moon-icon {
+    inline-size: 1.6rem;
+  }
+
+  nav {
+    margin: 1.6rem 2.4rem 4.8rem 2.4rem;
+  }
+
+  .nav__title {
+    gap: 1.6rem;
+  }
+
+  .topic-icon {
+    inline-size: 2.85rem;
+    padding: 0.57rem;
+  }
+
+  .topic-title {
+    font-size: 1.8rem;
+  }
+
+  main {
+    margin: 0 2.4rem;
+    gap: 4rem;
+  }
+
+  .topic-section {
+    gap: 2.4rem;
+    inline-size: 100%;
+  }
+
+  .welcome-section h2 {
+    font-size: 4rem;
+    margin-block-end: 1.6rem;
+  }
+
+  .welcome-section p {
+    font-size: 1.4rem;
+  }
+
+  .btn-topic-style {
+    padding: 1.2rem;
+    gap: 1.6rem;
+    border-radius: 1rem;
+  }
+}

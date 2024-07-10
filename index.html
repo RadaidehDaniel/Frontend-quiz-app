@@ -11,22 +11,19 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link href="./style.css" rel="stylesheet" />
-    <script src="./script.js" defer></script>
+    <script src="./script.js" type="module"></script>
     <title>Frontend Mentor | Frontend quiz app</title>
   </head>
   <body class="">
     <!-- NAVIGATION -->
     <nav>
       <div class="nav__title">
-        <img
-          src="/assets/images/icon-accessibility.svg"
-          class="topic-icon access-style"
-        />
-        <p class="topic-title">Accessibility</p>
+        <img src="" class="topic-icon" id="navigation-topic-img" />
+        <p class="topic-title" id="navigation-topic-text"></p>
       </div>
       <div class="nav__theme">
         <img src="./assets/images/icon-sun-dark.svg" alt="" id="sun-icon" />
-        <button class="theme-btn">
+        <button id="theme-switch" class="theme-btn">
           <div class="theme-btn-ball"></div>
         </button>
         <img src="./assets/images/icon-moon-dark.svg" alt="" id="moon-icon" />
@@ -34,7 +31,46 @@
     </nav>
 
     <!-- MAIN -->
-    <main></main>
+    <main>
+      <div class="welcome-section">
+        <h2>Welcome to the <span>Frontend Quiz!</span></h2>
+        <p>Pick a subject to get started.</p>
+      </div>
+      <div class="topic-section">
+        <button class="btn-topic-style" id="HTML">
+          <img
+            src="./assets/images/icon-html.svg"
+            alt=""
+            class="topic-icon html-style"
+          />
+          <p class="topic-title">HTML</p>
+        </button>
+        <button class="btn-topic-style" id="CSS">
+          <img
+            src="./assets/images/icon-css.svg"
+            alt=""
+            class="topic-icon css-style"
+          />
+          <p class="topic-title">CSS</p>
+        </button>
+        <button class="btn-topic-style" id="JavaScript">
+          <img
+            src="./assets/images/icon-js.svg"
+            alt=""
+            class="topic-icon js-style"
+          />
+          <p class="topic-title">Javascript</p>
+        </button>
+        <button class="btn-topic-style" id="Accessibility">
+          <img
+            src="./assets/images/icon-accessibility.svg"
+            alt=""
+            class="topic-icon access-style"
+          />
+          <p class="topic-title">Accessibility</p>
+        </button>
+      </div>
+    </main>
   </body>
 </html>
 
@@ -75,5 +111,66 @@
       class="topic-icon access-style"
     />
     <p class="topic-title">Accessibility</p>
+  </button>
+</div> -->
+
+<!-- Qs and As PAGE -->
+<!-- <div class="question-section">
+  <div>
+    <p class="counter-style">Question 6 of 10</p>
+    <p class="question-style">
+      Which of these color contrast ratios defines the minimum WCAG 2.1
+      Level AA requirement for normal text?
+    </p>
+  </div>
+  <div class="timer-container">
+    <div class="timer-indicator"></div>
+  </div>
+</div>
+<div class="answers-section">
+  <button class="answer-btn-style correct">
+    <p class="answer-order">A</p>
+    <p class="topic-title">4.5 : 1</p>
+    <img src="./assets/images/icon-correct.svg" />
+  </button>
+  <button class="answer-btn-style wrong">
+    <p class="answer-order">B</p>
+    <p class="topic-title">4.5 : 1</p>
+    <img src="./assets/images/icon-correct.svg" />
+  </button>
+  <button class="answer-btn-style">
+    <p class="answer-order">C</p>
+    <p class="topic-title">4.5 : 1</p>
+    <img src="./assets/images/icon-correct.svg" />
+  </button>
+  <button class="answer-btn-style">
+    <p class="answer-order">D</p>
+    <p class="topic-title">4.5 : 1</p>
+    <img src="./assets/images/icon-correct.svg" />
+  </button>
+  <button class="submit-btn-style">
+    <p>Submit Answer</p>
+  </button>
+  <p class="please">Please select an answer</p>
+</div> -->
+
+<!-- Score PAGE -->
+<!-- <div class="welcome-section">
+  <h2>Quiz completed <span>You scored...</span></h2>
+</div>
+<div class="answers-section">
+  <div class="score-section">
+    <div class="nav__title">
+      <img
+        src="/assets/images/icon-accessibility.svg"
+        class="topic-icon access-style"
+      />
+      <p class="topic-title keep-color">Accessibility</p>
+    </div>
+    <p class="score-style">8</p>
+    <p class="out-of-style">out of 10</p>
+  </div>
+  <button class="submit-btn-style">
+    <p>Play Again</p>
   </button>
 </div> -->

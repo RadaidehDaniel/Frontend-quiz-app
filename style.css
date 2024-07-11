@@ -39,6 +39,10 @@ body.dark {
   color: #fff;
 }
 
+.hidden {
+  display: none;
+}
+
 /* ========== */
 /* NAVIGATION */
 /* ========== */
